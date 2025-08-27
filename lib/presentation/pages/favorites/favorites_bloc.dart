@@ -5,11 +5,6 @@ import 'favorites_event.dart';
 import 'favorites_state.dart';
 
 class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {
-  /*FavoritesBloc(this.repository) : super(FavoritesLoaded([])) {
-    on<ToggleFavorite>(_onToggleFavorite);
-  }*/
-
-  //void _onToggleFavorite(ToggleFavorite event, Emitter<FavoritesState> emit) {
   final CardRepository repository;
 
   FavoritesBloc(this.repository) : super(FavoritesInitial()) {

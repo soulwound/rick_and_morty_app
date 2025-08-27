@@ -42,16 +42,6 @@ class FavoritesPage extends StatelessWidget{
                   )
                 ]
               );
-              /*return IconButton(
-                onPressed: (){
-                  context.read<FavoritesBloc>().add(
-                    SortFavorites(ascending: !ascending)
-                  );
-                }, 
-                icon: Icon(
-                  ascending ? Icons.sort_by_alpha : Icons.sort
-                )
-              );*/
             }
           ),
           ThemeToggleButton()

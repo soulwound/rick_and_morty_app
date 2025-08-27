@@ -39,8 +39,6 @@ class HomeBloc extends Bloc<HomeEvent, HomeState>{
     try {
       final newCards = await repository.getCards(page: _page);
       final cards = newCards.cards;
-      //final nextPage = currentState.page + 1;
-      //final cards = await repository.getCards(page: nextPage);
       final allCards = [
         ...currentState.cards,
         ...cards.where(

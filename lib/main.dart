@@ -35,12 +35,6 @@ Future<void> main() async {
     responseBody: true
   ));
 
-  /*(dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = 
-    (client) {
-      client.badCertificateCallback = (X509Certificate cert, String host, int port) => true;
-      return client;
-    };*/
-
   final apiClient = ApiClient(dio);
   final repository = CardRepository(apiClient: apiClient, box: box);
   //final repository = CardRepository(apiClient: apiClient);

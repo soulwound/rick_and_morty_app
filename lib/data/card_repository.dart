@@ -34,7 +34,6 @@ class CardRepository {
         await box.put(card.id, card);
       }
 
-      //return box.values.toList();
       return RepositoryResult(box.values.toList(), fromCache: false);
     } on DioException catch(e) {
       print('No interner or API error');

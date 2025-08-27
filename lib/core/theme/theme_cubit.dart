@@ -4,8 +4,6 @@ import 'package:hive/hive.dart';
 
 class ThemeCubit extends Cubit<ThemeMode> {
   final Box settingsBox;
-  
-  //ThemeCubit() : super(ThemeMode.light); // Тема по умолчанию
 
   ThemeCubit(this.settingsBox) : super(_getInitialTheme(settingsBox));
 
